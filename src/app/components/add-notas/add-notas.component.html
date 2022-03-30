@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header">
+        Notas
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formNotas" (ngSubmit)="enviarDatos()">
+
+            <div class="mb-3">
+              <label for="" class="form-label">Nombres:</label>
+              <input type="text" class="form-control" name="" formControlName="nombre" id="helpId" formControlName="nombre" aria-describedby="helpId" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Parcial 1:</label>
+              <input type="email" class="form-control" name="" formControlName="parcial1" id="" aria-describedby="emailHelpId" placeholder="Escribe tu correo">
+              
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Parcial 2:</label>
+                <input type="email" class="form-control" formControlName="parcial2" name="" id="" aria-describedby="emailHelpId" placeholder="Escribe tu correo">
+                
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Parcial 3:</label>
+                <input type="email" class="form-control" formControlName="parcial3" name="" id="" aria-describedby="emailHelpId" placeholder="Escribe tu correo">
+                
+            </div>
+
+
+            <div class="btn-group" role="group" aria-label="">
+                <button type="submit" class="btn btn-success">Registrar</button>
+            </div>
+
+            
+            <div class="mb-3">
+                <label for="" class="form-label">Final:</label>
+                
+            </div>
+        </form>
+    </div>
+</div>

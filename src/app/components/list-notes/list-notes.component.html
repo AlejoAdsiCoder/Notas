@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-header">
+        Header
+    </div>
+    <div class="card-body">
+        <div class="d-grid gap-2">
+          <a routerLink="/add-notas" name="" id="" class="btn success">Nuevo</a>
+        </div>
+        <h1>Notas</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Parcial1</th>
+                    <th>Parcial2</th>
+                    <th>Parcial3</th>
+                    <th>Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let nota if Notas">
+                    <td scope="row">{{ nota.usuario }}</td>
+                    <td>{{nota.parcial1}}</td>
+                    <td>{{nota.parcial2}}</td>
+                    <td>{{nota.parcial3}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-grid gap-2">
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
